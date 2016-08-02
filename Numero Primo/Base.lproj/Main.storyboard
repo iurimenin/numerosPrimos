@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Numero_Primo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4r-Sh-D3r">
+                                <rect key="frame" x="195" y="358" width="211" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="bIN-OE-MMK"/>
+                                    <constraint firstAttribute="height" constant="86" id="bPq-bl-Soc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esse número é primo?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMf-7a-7vz">
+                                <rect key="frame" x="202" y="43" width="197" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="gDq-ya-kzX"/>
+                                    <constraint firstAttribute="height" constant="32" id="hMC-Mm-NEB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entre com um número inteiro no campo abaixo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mT7-dc-qHT">
+                                <rect key="frame" x="123" y="97" width="355" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="355" id="BbU-kD-0Th"/>
+                                    <constraint firstAttribute="height" constant="21" id="SHS-4M-eE3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex: 15" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asg-Sz-T2l">
+                                <rect key="frame" x="252" y="156" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1de-yX-1FT"/>
+                                    <constraint firstAttribute="width" constant="97" id="EEc-B1-oBy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRB-wm-G6H">
+                                <rect key="frame" x="229" y="228" width="142" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="8Cy-qk-qe5"/>
+                                    <constraint firstAttribute="height" constant="30" id="ihW-8x-TsM"/>
+                                </constraints>
+                                <state key="normal" title="É um número primo?"/>
+                                <connections>
+                                    <action selector="buttonIsPrimo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wEY-uP-4LP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6R-mv-nQY">
+                                <rect key="frame" x="123" y="289" width="355" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="355" id="3sm-oB-kqk"/>
+                                    <constraint firstAttribute="height" constant="21" id="aF2-ND-skc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fMf-7a-7vz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="0lA-g9-vqd"/>
+                            <constraint firstItem="j6R-mv-nQY" firstAttribute="top" secondItem="fRB-wm-G6H" secondAttribute="bottom" constant="31" id="78n-1A-JLk"/>
+                            <constraint firstItem="fRB-wm-G6H" firstAttribute="top" secondItem="asg-Sz-T2l" secondAttribute="bottom" constant="42" id="8aN-G3-7MI"/>
+                            <constraint firstItem="mT7-dc-qHT" firstAttribute="top" secondItem="fMf-7a-7vz" secondAttribute="bottom" constant="22" id="C0x-Wz-Q7d"/>
+                            <constraint firstItem="mT7-dc-qHT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DgU-5h-6mt"/>
+                            <constraint firstItem="fRB-wm-G6H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F6o-FL-ou0"/>
+                            <constraint firstItem="S4r-Sh-D3r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="175" id="a4p-IY-4cW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S4r-Sh-D3r" secondAttribute="trailing" constant="174" id="cMX-LP-tz6"/>
+                            <constraint firstItem="S4r-Sh-D3r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oFg-ma-W7w"/>
+                            <constraint firstItem="asg-Sz-T2l" firstAttribute="top" secondItem="mT7-dc-qHT" secondAttribute="bottom" constant="38" id="puW-hg-sQ0"/>
+                            <constraint firstItem="fMf-7a-7vz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w6z-Av-c2c"/>
+                            <constraint firstItem="j6R-mv-nQY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w8d-n1-Dec"/>
+                            <constraint firstItem="asg-Sz-T2l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wbY-hO-U0B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelResultado" destination="j6R-mv-nQY" id="Jjq-ZH-qZI"/>
+                        <outlet property="numeroTextField" destination="asg-Sz-T2l" id="Ysb-xa-EHw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="539" y="378"/>
+        </scene>
+    </scenes>
+</document>
